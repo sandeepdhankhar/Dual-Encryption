@@ -12,7 +12,7 @@ There could be two possible scenarios:
 
 
 2. The keys are on the same system along with the data
-      Any sane developer would argue that there is no point of locking the door if the key is right next to it. This very case is almost the same.
+      We can make a case here that its not very useful to lock the door if the key is right next to it. This very case is almost the same.
 
 
 
@@ -20,4 +20,4 @@ Solution:
 
 (Disclaimer - There is nothing fancy of complicated about this solution)       
 
-You try to avoid implementing something which is fundamentally wrong and thats when you think about other possible alternatives. This is one of such alternatives. The idea is to use sessionId of the user as a secondary key to encrypt and decrypt the user data. The session identifier (cookie) is stored on the browser side and available only when there is a request  from the user browser. This way the chances of data being compromised in memory are way less than using only single encryption key.
+ The idea is to use sessionId of the user as a secondary key to encrypt and decrypt the user data. The session identifier (cookie) is stored on the browser side and available only when there is a request  from the user browser. This way the chances of data being compromised in memory are way less than using only single encryption key.
