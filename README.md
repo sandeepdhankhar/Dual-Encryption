@@ -18,6 +18,6 @@ There could be two possible scenarios:
 
 Solution:
 
-(Disclaimer - There is nothing fancy of complicated about this solution)       
+(Disclaimer - There is nothing fancy or complicated about this solution)       
 
  The idea is to use sessionId of the user as a secondary key to encrypt and decrypt the user data. The session identifier (cookie) is stored on the browser side and available only when there is a request  from the user browser. This way the chances of data being compromised in memory are way less than using only single encryption key.
