@@ -10,5 +10,5 @@ jobs:
         with:
           ref: ${{ github.event.client_payload.sha }}
           token: ${{ secrets.PAT }}
-          repository: sandeepdhankhar/awsS3-crypto
+          repository: ${{ github.event.client_payload.repository }}
       - run: echo ${{ github.event.client_payload.sha }}
